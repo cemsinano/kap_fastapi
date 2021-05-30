@@ -1,8 +1,8 @@
 from fastapi import FastAPI, status
 
 from pymongo import MongoClient
-from bson import json_util
-import json
+#from bson import json_util
+#import json
 
 client = MongoClient(
     "mongodb+srv://cemsinan:cemsinanUserPassword@cluster0.ombz1.mongodb.net/mikroskop?retryWrites=true&w=majority")
@@ -16,7 +16,7 @@ app = FastAPI()
 
 
 @app.get("/stock/{tick}")
-async def read_financial(tick: str):
+def read_financial(tick: str):
     # comp = BISTCompany(ticker = tick)
     # pr = comp.get_financial_reports()
     pr = collection.find({'ticker': tick})
