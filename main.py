@@ -39,13 +39,17 @@ async def newUser(sub: Subscriber):
     }
 
 
-@app.get("/subs/{sub_id}")
-async def read_item(sub_id: int, q: Optional[str] = None):
-    return {"sub_id": sub_id, "q": q}
+#@app.get("/subs/{sub_id}")
+#async def read_item(sub_id: int, q: Optional[str] = None):
+#    return {"sub_id": sub_id, "q": q}
+
+@app.get("/", tags=["Root"])
+async def read_root():
+    return {"message": "Welcome to this fantastic app!"}
 
 
 @app.get("/stock/{tick}")
-def read_financial(tick: str):
+async def read_financial(tick: str):
     # comp = BISTCompany(ticker = tick)
     # pr = comp.get_financial_reports()
     pr = collection.find({'ticker': tick})
