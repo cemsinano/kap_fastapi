@@ -23,7 +23,6 @@ def read_financial(tick: str):
     #print(pr[0])
 
     return  "OK" #json.loads(json_util.dumps(pr[0]))
-s
 
 
 
