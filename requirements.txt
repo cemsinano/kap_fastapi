@@ -3,5 +3,5 @@ pymongo
 uvicorn
 python-decouple
 pydantic
-./pykap
+./pykap/
 bson
