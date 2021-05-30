@@ -9,3 +9,4 @@ pandas
 datetime
 requests
 regex
+dnspython
