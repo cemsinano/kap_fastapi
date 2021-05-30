@@ -3,7 +3,6 @@ pymongo
 uvicorn
 python-decouple
 pydantic
-bson
 setuptools
 bs4
 pandas
