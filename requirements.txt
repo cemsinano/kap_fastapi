@@ -1,6 +1,7 @@
 fastapi
 pymongo
 uvicorn
-python-decople
+python-decouple
 pydantic
 ./pykap
+bson
