@@ -43,7 +43,7 @@ async def newUser(sub: Subscriber):
 #async def read_item(sub_id: int, q: Optional[str] = None):
 #    return {"sub_id": sub_id, "q": q}
 
-@app.get("/", tags=["Root"])
+@app.get("/")
 async def read_root():
     return {"message": "Welcome to this fantastic app!"}
 
