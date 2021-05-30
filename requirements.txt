@@ -1,0 +1,6 @@
+fastapi
+pymongo
+uvicorn
+python-decople
+pydantic
+./pykap
