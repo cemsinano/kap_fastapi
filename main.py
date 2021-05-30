@@ -21,9 +21,7 @@ def read_financial(tick: str):
     # pr = comp.get_financial_reports()
     pr = collection.find({'ticker': tick})
 
-    json.loads(json.dumps(pr[0], default=json_util.default, ensure_ascii=False))
-
-    # return json.loads(json_util.dumps(pr[0]))
+    return json.loads(json_util.dumps(pr[0]))
 
 
 
