@@ -7,7 +7,7 @@ from typing import Optional
 
 from fastapi import FastAPI
 from pydantic import BaseModel, NameEmail
-from pykap import BISTCompany, get_general_info
+#from pykap import BISTCompany, get_general_info
 
 from pymongo import MongoClient
 from bson import json_util
@@ -58,7 +58,7 @@ async def read_financial(tick: str):
     return json.loads(json_util.dumps(pr[0]))
 
 
-@app.get("/general/{tick}")
-def read_general(tick: str):
-    gi = get_general_info(tick=tick)
-    return gi
+#@app.get("/general/{tick}")
+#def read_general(tick: str):
+#    gi = get_general_info(tick=tick)
+#    return gi
