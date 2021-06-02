@@ -2,6 +2,7 @@ fastapi
 pymongo
 uvicorn
 python-decouple
+python-dotenv
 pydantic
 setuptools
 bs4
@@ -10,3 +11,4 @@ datetime
 requests
 regex
 dnspython
+pykap
