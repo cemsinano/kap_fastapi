@@ -17,7 +17,7 @@ db = client['mikroskop']
 collection = db['bist_companies']
 
 
-app = FastAPI()
+app = FastAPI(title='KAP API', description='KAP(Public Disclosure Platform) Documentation API for Capital Markets Board of Turkey and Borsa Istanbul Public Disclosures')
 
 
 
