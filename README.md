@@ -8,5 +8,8 @@ Utilized [PyKap](https://github.com/cemsinano/pykap) to gather data into MongoDB
 
 It can be accessed via [this link](https://shielded-dawn-32422.herokuapp.com/docs).
 
+## Example:
+
+![](api_example.png)
 
 
